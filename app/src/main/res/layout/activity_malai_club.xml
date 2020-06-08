@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MalaiClub">
+    <LinearLayout
+        android:id="@+id/lin_layout_ml_ai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:layout_margin="8sp"
+            android:src="@drawable/malai_logo"/>
+
+        <Button
+            android:id="@+id/ml_ai_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/ml_ai_about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/malai_about"
+            android:textSize="30sp"
+            android:textAlignment="gravity"
+            android:textStyle="normal"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginBottom="8sp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/malai_eve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <Button
+            android:id="@+id/malai_achieve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <Button
+            android:id="@+id/malai_team_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

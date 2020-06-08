@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NullClub">
+
+    <LinearLayout
+        android:id="@+id/lin_layout_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:layout_margin="8sp"
+            android:src="@drawable/nullclubb"/>
+
+        <Button
+            android:id="@+id/null_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/null_about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/null_about"
+            android:textSize="30sp"
+            android:textAlignment="gravity"
+            android:textStyle="normal"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginBottom="8sp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/null_eve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/null_eve_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/event_1_null"
+            android:layout_margin="8sp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/null_eve_2"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/event_2_null"
+            android:layout_margin="8sp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/null_eve_3"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/event_3_null"
+            android:layout_margin="8sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <Button
+            android:id="@+id/null_achieve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/null_achieve_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/achieve_1_null"
+            android:layout_margin="8sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/null_achieve_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/achieve_2_null"
+            android:layout_margin="8sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textSize="35sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

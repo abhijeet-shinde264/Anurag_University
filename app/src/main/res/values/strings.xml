@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Anurag University</string>
+    <string name="event">Events</string>
+    <string name="placment">Placement Blog</string>
+    <string name="intership">Internship Blog</string>
+    <string name="map">Map</string>
+    <string name="achivements">Achievements</string>
+    <string name="about">About</string>
+    <string name="developer">Developers</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">ForgotPassword?</string>
+    <string name="karna">Developers</string>
+    <string name="bhanu">Bhanu Prakash</string>
+    <string name="abhijeeth">Abhijeet        Shinde</string>
+    <string name="nagesh">Thota Nagesh</string>
+    <string name="ravi">Raviteja Reddy</string>
+    <string name="neha">  Neha  </string>
+    <string name="t1">Vice President\n"17h61a0561@cvsr.ac.in"\n"9100299369</string>
+    <string name="t2">General Secretary"\n"18h61a0554@cvsr.ac.in"\n"8106994401</string>
+    <string name="t3">Documentation"\n"18h61a0520@cvsr.ac.in"\n"9502148636</string>
+    <string name="t4">Designer"\n"18h61a05p5@cvsr.ac.in"\n"9440463065</string>
+    <string name="t5">Organiser"\n"18h61a0507@cvsr.ac.in"\n"8328506729</string>
+    <string name="andy_about">Anurag Android Club (AAC) was initiated with the motto of developing mobile applications on Android technology for the common people needs in daily life.</string>
+    <string name="null_about">Our main objective is to introduce students to real world problems and usecases in the field of InfoSec.Following our club’s motto, in today’s world of growing cyber crime, we train young minds to be acutely aware of the world of information security and also emergent technologies like BlockChain to contribute in building a Cyber Secure India.</string>
+    <string name="data_about">The Data Analytics Club’s (DAC) mission is to focus on career development and equip students with the right skills and tools that will enable them to develop/apply relevant analytics-driven solutions. In pursuit of this goal, we will provide hands-on experience in business analytics through, learning, events, program simulations, and guest lectures.</string>
+    <string name="iot_about">The Internet Of Things Club is a place where you can find the latest information around The Internet Of Things. From news, ideas where the IOT can take us, to examples from everyday applications. We are like the Internet Of Things, a Club open to everyone and everything.</string>
+    <string name="malai_about">We, The club of Machine Learning and Artificial Intelligence enrich the students who are fond of learning how M.L. and A.I. make the world a better place.Students will have contact with the Industry level people delegates who give insight about what is happening in the current software trends and how they progress making the student learn up-to date technologies with regard to A.I. and M.L.</string>
+
+</resources>

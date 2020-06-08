@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperPage"
+    android:background="#1A1818">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="454dp"
+                android:textIsSelectable="true"
+                android:layout_height="73dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/karna"
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:civ_border_width="5dp"
+                android:layout_marginTop="23sp"
+                app:civ_border_color="#fff"
+                android:src="@drawable/abhijeeth"/>
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textIsSelectable="true"
+                android:textColor="#fff"
+                android:text="@string/abhijeeth"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/t1"
+                android:textColor="#fff"
+                android:textIsSelectable="true"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18sp"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#fff"
+                android:src="@drawable/nagesh"/>
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nagesh"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/t2"
+                android:textColor="#fff"
+                android:textIsSelectable="true"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:civ_border_width="5dp"
+                android:layout_marginTop="18sp"
+                app:civ_border_color="#fff"
+                android:src="@drawable/raviteja"/>
+            <TextView
+                android:layout_width="158dp"
+                android:textIsSelectable="true"
+                android:layout_height="wrap_content"
+                android:text="@string/ravi"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/t3"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="18sp"
+                android:layout_gravity="center"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#fff"
+                android:src="@drawable/team"/>
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="@string/neha"
+                android:textIsSelectable="true"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/t4"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_marginTop="18sp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#fff"
+                android:src="@drawable/bhanu"/>
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bhanu"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textColor="#fff"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/t5"
+                android:textIsSelectable="true"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?attr/actionModeSplitBackground" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

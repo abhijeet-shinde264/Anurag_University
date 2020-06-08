@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/clubs"
+    android:title="Clubs"/>
+    <item android:id="@+id/chapters"
+        android:title="Chapters"/>
+    <item android:id="@+id/event"
+        android:title="@string/event"/>
+    <item android:id="@+id/placment"
+        android:title="@string/placment"/>
+    <item android:id="@+id/inteship"
+        android:title="@string/intership"/>
+    <item android:id="@+id/map"
+        android:title="@string/map"/>
+    <item android:id="@+id/achivements"
+        android:title="@string/achivements"/>
+    <item android:id="@+id/about"
+        android:title="@string/about"/>
+    <item android:id="@+id/developer"
+    android:title="@string/developer"/>
+    <item android:id="@+id/logout"
+        android:title="@string/logout"/>
+</menu>

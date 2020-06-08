@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.auapp.anuraguniversity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoau"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WebClub"></activity>
+        <activity android:name=".NullClub" />
+        <activity android:name=".MalaiClub" />
+        <activity android:name=".DataAnaliticsClub" />
+        <activity android:name=".DscClub" />
+        <activity android:name=".CloudClub" />
+        <activity android:name=".IOTClub" />
+        <activity android:name=".AndroidClub" />
+        <activity android:name=".DeveloperPage" />
+        <activity android:name=".Android_details_student" />
+        <activity android:name=".ShowEvent" />
+        <activity android:name=".AddEvent" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".SignupPage" />
+        <activity android:name=".FirstPage" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".ShowEvents" />
+        <activity android:name=".EventtPost" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".AchivmentPost" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MainActivity" /> <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCUpS7bqoNMeUcXOnRdnwHDLJrI-0D84wM" />
+    </application>
+
+</manifest>
