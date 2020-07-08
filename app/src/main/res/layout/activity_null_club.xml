@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NullClub">
+    tools:context=".NullClub"
+    android:background="#A823A7D8">
 
     <LinearLayout
         android:id="@+id/lin_layout_null"
@@ -17,14 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="240sp"
             android:layout_margin="8sp"
-            android:src="@drawable/nullclubb"/>
+            android:src="@drawable/null_logo"/>
 
         <Button
             android:id="@+id/null_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -35,13 +36,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/null_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
+            android:fontFamily="sans-serif"
             android:textColor="#ffffff"
             android:visibility="gone"/>
 
@@ -50,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -61,28 +62,81 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/event_1_null"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/null_eve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World BlockChain Hackathon"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
         <ImageView
             android:id="@+id/null_eve_2"
             android:layout_width="match_parent"
             android:layout_height="240sp"
             android:src="@drawable/event_2_null"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/null_eve_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="International BlockChain Congress 2018"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
         <ImageView
             android:id="@+id/null_eve_3"
             android:layout_width="match_parent"
             android:layout_height="240sp"
             android:src="@drawable/event_3_null"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/null_eve_3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hague CyberSecurity Summer school at JNTUH"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Projects"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -93,7 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -104,30 +158,75 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/achieve_1_null"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/null_achieve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Being selected as IBC Hack Finalists"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
 
         <ImageView
             android:id="@+id/null_achieve_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/achieve_2_null"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/null_achieve_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalists of World BlockChain Hackathon"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
 
         <Button
+            android:id="@+id/null_team_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
-
-
-
+        <TextView
+            android:id="@+id/null_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P Vinaya Sree - Faculty Lead\n\nN Manikya Arun - President\n\nJ Vasundhara - Vice President Membership\n\nK Hamsini - Vice President Education and Training\n\nAnjan Kumar - Treasurer\n\nSrikar - Vice President Public Relations\n\nP Hemanth Kumar - Event Hospitality\n\nPattabhi - Event Hospitality\n\nNagesh - Event Hospitality\n\nHarsha Vardhan - Organizer\n\nRavi Teja - Organizer"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
 
 
     </LinearLayout>

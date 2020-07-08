@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -24,7 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginPage extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
-    private Button btnSignup,btfp;
+    private Button btnsignup,btfp,btlogin;
     EditText email,pass;
     Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -41,12 +43,17 @@ public class LoginPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_login_page);
         firebaseAuth = FirebaseAuth.getInstance();
 //        lg = findViewById(R.id.btnLogin);
-        btnSignup=(Button)findViewById(R.id.btnSignup);
-        rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
-        rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
+        btlogin = findViewById(R.id.btlogin);
+        btnsignup=findViewById(R.id.btnSignup);
+        rellay1 = findViewById(R.id.rellay1);
+        rellay2 = findViewById(R.id.rellay2);
         email = findViewById(R.id.lgemail);
         pass = findViewById(R.id.lgpass);
         btfp = findViewById(R.id.forgotpass);
@@ -71,7 +78,7 @@ public class LoginPage extends AppCompatActivity {
                 }
             }
         };
-        btnSignup.setOnClickListener(new View.OnClickListener() {
+        btlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(email.getText().toString().isEmpty() || pass.getText().toString().isEmpty()){
@@ -98,6 +105,12 @@ public class LoginPage extends AppCompatActivity {
                 else {
                     Toast.makeText(LoginPage.this, "Error", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        btnsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginPage.this,SignupPage.class));
             }
         });
 //        ActionBar actionBar = getSupportActionBar();

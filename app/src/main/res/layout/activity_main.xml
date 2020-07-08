@@ -5,16 +5,253 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/drawerlayout">
-
-    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/drawerlayout"
+    android:background="@drawable/bg_grident">
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/recycleview"/>
+        android:layout_marginBottom="10dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anurag University at a Glance"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FDFDFD"
+                    android:text="Anurag University is a private university located in Hyderabad, Telangana. Our primary focus is to provide a high-quality graduate, postgraduate and doctoral education in engineering, pharmacy and management fields.\n\n
+Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ESTABLISHED"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="#FDFDFD"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#FDFDFD"
+                android:text="Anurag University, run by Gayatri educational and cultural trust, began offering undergraduate programs since 1998 from Lalitha Degree and P.G college and CVSR college of Engineering. It was officially named as Anurag University in 2020." />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENROLLMENT"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="#FDFDFD"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="UNDERGRADUATE INTAKE:"
+                    android:textColor="#FDFDFD"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="1240"
+                    android:textColor="#FDFDFD"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="GRADUATE INTAKE:"
+                    android:textColor="#FDFDFD"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="240"
+                    android:textColor="#FDFDFD"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TOTAL STUDENTS"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FDFDFD"
+                    android:textSize="25dp"  />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6500"
+                    android:textColor="#FDFDFD"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT DEMOGRAPHICS"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="#FDFDFD"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ARE WOMEN"
+                    android:textSize="25dp"
+                    android:textColor="#FDFDFD"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="48%"
+                    android:textColor="#FDFDFD"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="AVERAGE AGE"
+                    android:textColor="#FDFDFD"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="25"
+                    android:textSize="25dp"
+                    android:textColor="#FDFDFD"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -23,5 +260,4 @@
         android:layout_gravity="start"
         android:id="@+id/nview"
         app:headerLayout="@layout/nav_header"/>
-
 </androidx.drawerlayout.widget.DrawerLayout>

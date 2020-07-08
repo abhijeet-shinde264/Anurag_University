@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AndroidClub">
+    tools:context=".AndroidClub"
+    android:background="#A823A7D8">
     <LinearLayout
         android:id="@+id/lin_layout_1"
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -38,14 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/andy_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
             android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
             android:visibility="gone"/>
 
         <Button
@@ -53,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -83,21 +84,37 @@
 
 
         <Button
+            android:id="@+id/app_android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Apps"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/andy_app_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/career_guide_app"
+            android:layout_margin="5sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/andy_app_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eventium_app"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/andy_achieve_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -124,11 +141,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/andy_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mrs. M.Madhavi - Faculty Lead\n\nG.Alekhya - President\n\nNithya - Vice President\n\nV.Supriya - Technical Secretary\n\nNagesh - General Secretary\n\nAbhijeet - Marketing Coordinator\n\nRohit - Treasurer\n\nRavi Teja - Documentation\n\nNeha - Designer"
+            android:textSize="20sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

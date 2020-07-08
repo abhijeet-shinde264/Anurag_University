@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MalaiClub">
+    tools:context=".MalaiClub"
+    android:background="#A823A7D8">
     <LinearLayout
         android:id="@+id/lin_layout_ml_ai"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -37,13 +38,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/malai_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
+            android:fontFamily="sans-serif"
             android:textColor="#ffffff"
             android:visibility="gone"/>
 
@@ -52,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -62,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Projects"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -73,7 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="35sp"
+
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -84,16 +86,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
-
-
-
-
-
+        <TextView
+            android:id="@+id/malai_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr.A. Obulesh - Head\n\nA. Shashank Raj - President\n\nP. Rahul - Secretary\n\nArunKumar Kudarihal - Vice President Education and Training\n\nV.Anisha Raj - Vice President Membership\n\nDindima Reddy Avula - Treasurer\n\nYashashwini Potu - Vice President Public Relations\n\nAnirudh kumar - Vice President Membership\n\nN.Charan - Treasurer\n\nHruthika.T - \n\nVice President Education and Training\n\nS.Sreeja Reddy - Industry Coordinator\n\nMadhukar - Industry Coordinator\n\nHemanth Erabelli - Vice President Public Relations\n\nY K V Mohanji - Vice President Membership"
+            android:textSize="20sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
     </LinearLayout>
 </ScrollView>

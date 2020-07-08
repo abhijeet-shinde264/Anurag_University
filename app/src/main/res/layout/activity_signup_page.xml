@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupPage"
     android:background="@drawable/grad_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -18,6 +22,16 @@
             android:id="@+id/imgView_logo"
             android:layout_width="146dp"
             android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginRight="138dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@drawable/logoau" />
@@ -36,7 +50,8 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="Sign Up"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp" />
 
             <LinearLayout
                 android:id="@+id/linlay1"
@@ -58,7 +73,8 @@
                         android:text="Name"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp" />
 
                     <EditText
                         android:id="@+id/suname"
@@ -71,7 +87,9 @@
                         android:paddingRight="15dp"
                         android:inputType="textPersonName"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
 
                 </LinearLayout>
 
@@ -88,7 +106,8 @@
                         android:text="Username"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"/>
 
                     <EditText
                         android:id="@+id/suemail"
@@ -101,7 +120,9 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
 
                 </LinearLayout>
 
@@ -126,7 +147,8 @@
                         android:text="Password"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp" />
 
                     <EditText
                         android:id="@+id/supass"
@@ -139,7 +161,9 @@
                         android:paddingRight="15dp"
                         android:inputType="textPassword"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
 
                 </LinearLayout>
 
@@ -156,7 +180,8 @@
                         android:text="Confirm Password"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp" />
 
                     <EditText
                         android:id="@+id/sucpass"
@@ -169,7 +194,9 @@
                         android:paddingRight="15dp"
                         android:inputType="textPassword"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
 
                 </LinearLayout>
 
@@ -203,5 +230,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -7,6 +7,7 @@
     tools:context=".LoginPage"
     android:background="@drawable/grad_bg"
     android:animateLayoutChanges="true">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,6 +21,16 @@
             android:id="@+id/imgView_logo"
             android:layout_width="146dp"
             android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginRight="138dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@drawable/logoau" />
@@ -38,7 +49,8 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="Login"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"/>
 
             <LinearLayout
                 android:id="@+id/linlay1"
@@ -60,7 +72,8 @@
                         android:text="Username"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp" />
 
                     <EditText
                         android:id="@+id/lgemail"
@@ -73,7 +86,9 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
 
                 </LinearLayout>
 
@@ -90,7 +105,8 @@
                         android:text="Password"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp" />
 
                     <EditText
                         android:id="@+id/lgpass"
@@ -103,20 +119,23 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:id="@+id/btlogin"
+                android:layout_width="227dp"
+                android:layout_height="63dp"
                 android:layout_below="@+id/linlay1"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/btn_bg"
+                android:layout_marginTop="27dp"
                 android:fontFamily="sans-serif-medium"
+                android:background="@drawable/grad_bg"
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
                 android:text="Login Now"

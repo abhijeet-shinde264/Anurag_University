@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -40,6 +42,10 @@ public class SignupPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_signup_page);
         rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
         name = findViewById(R.id.suname);
@@ -47,6 +53,7 @@ public class SignupPage extends AppCompatActivity {
         supass = findViewById(R.id.supass);
         sucpass = findViewById(R.id.sucpass);
         firebaseAuth = FirebaseAuth.getInstance();
+        signup = findViewById(R.id.btn_signup);
         signupPage1 = new SignupPage1();
         PD = new ProgressDialog(this);
         PD.setMessage("Loading...");

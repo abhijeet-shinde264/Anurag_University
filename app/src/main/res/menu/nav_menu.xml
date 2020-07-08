@@ -5,9 +5,20 @@
     <item android:id="@+id/chapters"
         android:title="Chapters"/>
     <item android:id="@+id/event"
-        android:title="@string/event"/>
+        android:title="@string/event">
+<!--        <menu>-->
+<!--            <item android:id="@+id/showevents"-->
+<!--                android:title="Events"-->
+<!--                android:visible="false"/>-->
+<!--            <item android:id="@+id/addevents"-->
+<!--                android:title="Add Events"-->
+<!--                android:visible="false"/>-->
+<!--        </menu>-->
+    </item>
     <item android:id="@+id/placment"
         android:title="@string/placment"/>
+    <item android:title="@string/course"
+        android:id="@+id/course"/>
     <item android:id="@+id/inteship"
         android:title="@string/intership"/>
     <item android:id="@+id/map"

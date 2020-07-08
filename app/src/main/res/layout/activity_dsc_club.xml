@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DscClub">
+    tools:context=".DscClub"
+    android:background="#A823A7D8">
     <LinearLayout
         android:id="@+id/lin_layout_dsc"
         android:layout_width="match_parent"
@@ -23,75 +24,168 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
-
-
-
 
         <TextView
             android:id="@+id/dsc_about_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/andy_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
+            android:fontFamily="sans-serif"
             android:textColor="#ffffff"
             android:visibility="gone"/>
 
         <Button
+            android:id="@+id/dsc_button_events"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
+        <ImageView
+            android:id="@+id/dsc_event_1"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_margin="8sp"
+            android:src="@drawable/dsc_event_1"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/dsc_event_1_text"
+            android:text="DSC Hackthon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
+        <ImageView
+            android:id="@+id/dsc_event_2"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_margin="8sp"
+            android:src="@drawable/dsc_event_2"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/dsc_event_2_text"
+            android:text="GCP Certifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
+        <ImageView
+            android:id="@+id/dsc_event_3"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_margin="8sp"
+            android:src="@drawable/dsc_event_3"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/dsc_event_3_text"
+            android:text="Quantum Computing -QTalk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
         <Button
+            android:id="@+id/dsc_project"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Projects"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
         <Button
+            android:id="@+id/dsc_achivement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
+        <TextView
+            android:id="@+id/dsc_achi_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dsc_achi"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
+
         <Button
+            android:id="@+id/dsc_team"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
-
-
-
-
-
+        <TextView
+            android:id="@+id/dscteam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B Ravinder Reddy - Faculty Lead\n\n
+Dsc lead- T Rishwi\n\n
+Core team - \n\n
+A Sai kumar\n\n
+Karthik\n\n
+V Harika\n\n
+N Preetha\n\n
+Puneeth\n\n
+Abhishek"
+            android:textSize="20sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
     </LinearLayout>
-
 </ScrollView>

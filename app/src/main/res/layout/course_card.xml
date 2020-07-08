@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/cardview"
+        android:clickable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="306dp">
+        <TextView
+            android:id="@+id/tview1"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:gravity="center_horizontal"
+            android:text="UNDER GRADUATE (UG)"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_alignBottom="@+id/tview1"
+            android:layout_marginBottom="-192dp"
+            android:src="@drawable/pg" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

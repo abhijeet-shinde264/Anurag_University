@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IEEE_chapter"
+    android:background="#A823A7D8">
+
+    <LinearLayout
+        android:id="@+id/lin_layout_ieee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:layout_margin="8sp"
+            android:src="@drawable/ieee_logo"/>
+        <Button
+            android:id="@+id/ieee_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/ieee_about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ieee_about"
+            android:textSize="25sp"
+            android:textAlignment="gravity"
+            android:textStyle="normal"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginBottom="8sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/ieee_eve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/ieee_eve_1"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/eve_1_ieee"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ieee_eve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design Thinking is a five stage process enables to design solutions for human-centered problems"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ieee_eve_2"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/eve_2_ieee"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/ieee_eve_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI with Machine Learning"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+
+
+        <Button
+            android:id="@+id/ieee_achieve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/ieee_achieve_1"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/achieve_1_ieee"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ieee_achieve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="K.Vamshi Krishna : Paper blue mike selected for region 10 paper contest and is shortlisted among top 11 papers all over asia,Australia and other asian countries.\n\nR. Vaishnavi got selected as committee member in women in Computing Activity"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/ieee_team_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/ieee_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Durga Bhavani - IEEE Faculty Advisor\n\nJhansi - Chair\n\nG Alekhya - Vice Chair\n\nK Sai Krishna - Technical Secretary"
+            android:textSize="20sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

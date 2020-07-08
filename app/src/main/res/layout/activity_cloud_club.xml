@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CloudClub">
+    tools:context=".CloudClub"
+    android:background="#A823A7D8">
     <LinearLayout
         android:id="@+id/lin_layout_cloud"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -34,61 +35,134 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/andy_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
+            android:fontFamily="sans-serif"
             android:textColor="#ffffff"
             android:visibility="gone"/>
 
         <Button
+            android:id="@+id/cc_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
-
+        <ImageView
+            android:id="@+id/cc_event_1"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_margin="8sp"
+            android:src="@drawable/cloud_event_1"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/cc_event_1_text"
+            android:text="Call for Code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
+        <ImageView
+            android:id="@+id/cc_event_2"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_margin="8sp"
+            android:src="@drawable/cloud_event_2"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/cc_event_2_text"
+            android:text="Dev Fest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
         <Button
+            android:id="@+id/cc_project"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Projects"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
         <Button
+            android:id="@+id/cc_achi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
-
+        <TextView
+            android:id="@+id/cc_achi_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cc_achi"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"/>
         <Button
+            android:id="@+id/cc_team"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
 
-
-
-
-
-
+        <TextView
+            android:id="@+id/cc_team_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P Rajashekar Reddy - Faculty lead\n\n
+President - chaitanya\n\n
+Vp eand t - harika, nithya\n\n
+Vp mem - srilekha, sravan\n\n
+Vp PR - Divija,Surya Deepak\n\n
+Secretary- sri ram,Sai Divya Teja\n\n
+Treasurer- harsha,Sridhar\n\n
+Event hospitality- Chandana ,Israr\n\n
+Immediate next president - rashwith\n\n"
+            android:textSize="20sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone" />
     </LinearLayout>
 
 </ScrollView>

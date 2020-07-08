@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IOTClub">
+    tools:context=".IOTClub"
+    android:background="#A823A7D8">
     <LinearLayout
         android:id="@+id/lin_layout_iot"
         android:layout_width="match_parent"
@@ -13,16 +14,16 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="240sp"
+            android:layout_width="381dp"
+            android:layout_height="236dp"
             android:layout_margin="8sp"
-            android:src="@drawable/iot"/>
+            android:background="@drawable/iot" />
         <Button
             android:id="@+id/iot_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -36,13 +37,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/iot_about"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:textStyle="normal"
             android:layout_marginLeft="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
-            android:background="#000000"
+            android:fontFamily="sans-serif"
             android:textColor="#ffffff"
             android:visibility="gone"/>
 
@@ -51,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Events"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -59,32 +60,87 @@
 
         <ImageView
             android:id="@+id/iot_eve_1"
+            android:layout_width="wrap_content"
+            android:layout_height="358dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:src="@drawable/event_1_iot"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/iot_eve_1_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/event_1_iot"
-            android:layout_margin="8sp"
+            android:text="36hrs Hackathon on IOT in association with CSI"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
         <ImageView
             android:id="@+id/iot_eve_2"
-            android:layout_width="match_parent"
-            android:layout_height="240sp"
+            android:layout_width="wrap_content"
+            android:layout_height="213dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
             android:src="@drawable/event_2_iot"
-            android:layout_margin="8sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/iot_eve_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workshop on IOT with Arduino and Rasberi-pi"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
         <ImageView
             android:id="@+id/iot_eve_3"
             android:layout_width="match_parent"
             android:layout_height="240sp"
             android:src="@drawable/event_3_iot"
-            android:layout_margin="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/iot_eve_3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IOT Challenge 2019 in collaboration with IOT Club and ISTE"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
 
         <Button
             android:id="@+id/iot_achieve_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Achievements"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
@@ -92,30 +148,64 @@
 
         <ImageView
             android:id="@+id/iot_achieve_1"
+            android:layout_width="402dp"
+            android:layout_height="248dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:src="@drawable/achieve_1_iot"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/iot_achieve_1_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/achieve_1_iot"
-            android:layout_margin="8sp"
+            android:text="National Industry Partnership Program(NIPP) Mobility challenge"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
             android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/iot_achieve_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="336dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
             android:src="@drawable/achieve_2_iot"
-            android:layout_margin="8sp"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            />
 
         <Button
             android:id="@+id/iot_team_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_margin="8sp"
             android:background="#ffffff"
             android:textColor="#ff005d"
             android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/iot_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mr. G.Balaram,Assistant Proffessor,Faculty Coordinator\n\nMs.Anisha Arya - President\n\nMr. TVVS.Naveen - Vice President Education and training\n\nMr.B.Shashank - Vice President Membership\n\nMr.Jaidi Tarun Reddy - Vice President Public Relations\n\nMr.N.Praneeth - Secretary\n\nMs.Ramya Sree - Treasurer\n\nMr.N.Uthej Kumar - Immediate Past President\n\nMs.A.Veda - Event Hospitality"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
 
 
 

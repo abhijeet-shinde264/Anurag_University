@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CSI_chapter"
+    android:background="#A823A7D8">
+
+    <LinearLayout
+        android:id="@+id/lin_layout_csi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:layout_margin="8sp"
+            android:src="@drawable/csi_logo"/>
+        <Button
+            android:id="@+id/csi_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/csi_about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/csi_about"
+            android:textSize="25sp"
+            android:textAlignment="gravity"
+            android:textStyle="normal"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginBottom="8sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/csi_eve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/csi_eve_1"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/eve_1_csi"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/csi_eve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enterprise Architecture with TOGAF"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/csi_achieve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/csi_achieve_1"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/achieve_1_csi"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/csi_achieve_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr.Vishnu Murthy received Best HOD Of The Year from CSI TechNext, IIT Bombay."
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/csi_achieve_2"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/achieve_2_csi"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/csi_achieve_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longest Continuous SBC Award."
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/csi_team_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textSize="30sp"
+            android:layout_margin="8sp"
+            android:background="#ffffff"
+            android:textColor="#ff005d"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <TextView
+            android:id="@+id/csi_team_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Body Coordinator - RAMA KRISHNA\n\nPresident - RAMYA SRI\n\nVice President - SHASHIDHAR\n\nGeneral Secretary - SUNANTH\n\nManaging Head - ADITYA\n\nSchedule Divisor - ALEKHYA\n\nLead Organizer - MAHITA\n\nWeb Developer - SRIRAM"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="5sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</ScrollView>

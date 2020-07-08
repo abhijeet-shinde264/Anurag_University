@@ -5,6 +5,7 @@
     <string name="intership">Internship Blog</string>
     <string name="map">Map</string>
     <string name="achivements">Achievements</string>
+    <string name="course">Courses</string>
     <string name="about">About</string>
     <string name="developer">Developers</string>
     <string name="open">Open</string>
@@ -31,5 +32,44 @@
     <string name="data_about">The Data Analytics Club’s (DAC) mission is to focus on career development and equip students with the right skills and tools that will enable them to develop/apply relevant analytics-driven solutions. In pursuit of this goal, we will provide hands-on experience in business analytics through, learning, events, program simulations, and guest lectures.</string>
     <string name="iot_about">The Internet Of Things Club is a place where you can find the latest information around The Internet Of Things. From news, ideas where the IOT can take us, to examples from everyday applications. We are like the Internet Of Things, a Club open to everyone and everything.</string>
     <string name="malai_about">We, The club of Machine Learning and Artificial Intelligence enrich the students who are fond of learning how M.L. and A.I. make the world a better place.Students will have contact with the Industry level people delegates who give insight about what is happening in the current software trends and how they progress making the student learn up-to date technologies with regard to A.I. and M.L.</string>
+    <string name="acm_about">The Association for Computing Machinery (ACM) is a U.S.-based international learned society for computing. It was founded in 1947 and is the world’s largest and most prestigious scientific and educational computing society.Its motto is "Advancing Computing as a Science and Profession.</string>
+    <string name="ieee_about">Anurag IEEE student branch Inaugurated on 28th July 2012 by Dr Atul Negi, Professor, Department of Computer and Information Sciences, University of Hyderabad and Chair, IEEE, Hyderabad section.IEEE Student Chapter provides an oppurtunity for its student members to begin networking in their area of interest and future profession.</string>
+    <string name="iste_about">AGI Indian Society for technical Education (ISTE) student chapter was established in 2012 at Anurag Group of Institutions with an aim to improve the students’ overall personality in line with the nation’s technical education system. AGI ISTE student chapter being a vibrant student chapter, has 1208 students as its members till date.</string>
+    <string name="about1">Anurag University is a private university located in Hyderabad, Telangana. Go around the 55 acres urban campus.Anurag university apart from the state-of-the-art education, is the right place for the Nature lovers, wildlife, divinity , heritage, startups, Innovation and technological exploration.</string>
+    <string name="about2">Anurag University, run by Gayatri educational and cultural trust, began offering undergraduate programs since 1998 from Lalitha Degree and P.G college and CVSR college of Engineering. It was officially named as Anurag University in 2020.</string>
+    <string name="about3">The primary focus is to provide a high-quality graduate, postgraduate and doctoral education in engineering, pharmacy and management fields.</string>
+    <string name="about4">Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs.</string>
+    <string name="about5">Levels of quality varies greatly from an institution to the next. The sure way for an institution to meet the highest standard of education is by getting accredited.\n
+	180 India Rank\n
+	NAAC ‘A’ Accreditation\n
+	NBA Accreditation\n
+	UGC Autonomous\n
+	TCS Accreditation</string>
+    <string name="about6">Team of Dedicated Mentors will look after the welfare and progress of students.</string>
+    <string name="about7">At Anurag, students are encouraged  to remain engrossed with a plethora of events and competitions organized by the clubs.</string>
+    <string name="about8">The Technical Clubs at Anurag nurtures the students to involve in learning state-of–the-art technologies to enrich their knowledge.</string>
+    <string name="about9">There are also events which put together to bring the coding community together to get involved in software development and to turn different ideas into apps for various domains.</string>
+    <string name="about10">Anurag is equipped with vast play fields of International standard for all outdoor sports and Indoor stadium with wooden flooring to facilitate all Indoor games. </string>
+    <string name="about11">The Library aspires to be the most dynamic learning environment in the campus. Anurag has a significant library infrastructure spread over 3 floors  including the digital library to provide comprehensive resources and services in support of the Research, Teaching, and Learning needs of the university community.</string>
+    <string name="about12">Good numbers of Information Technology and Core Engineering companies visit Anurag to evaluate and recruit students. </string>
+    <string name="about13">The Training and Placement division ensure to provide comprehensive training to all students in-line with the company requirements.</string>
+    <string name="csi_about">Computer Society of India is the first and largest body of computer professionals in India. It was started on 6 March 1965 by
+a few computer professionals and has now grown to be the national body representing computer professionals. It has 72
+chapters across India, 511 student branches, and 100,000 members.
+
+The Computer Society of India is a non-profit professional body which facilitates exchanging views and information and,
+sharing ideas. The wide spectrum of members is committed to the advancement of theory and practice of Computer
+Engineering and Technology Systems, Science and Engineering, Information Processing and related Arts and Sciences. The
+Society also encourages and assists professionals to maintain integrity and competence of the profession and fosters a sense
+of partnership amongst members.</string>
+    <string name="dsc_achi">Actions on Google workshop + hackathon for all this years.\n
+Quantum computing seminar for all second years.\n
+Google Cloud platform courses. For around 50 students.\n
+ Trained students on Android app development.\n
+Chatbot hackathon to make students develop chatbot for real time projects.</string>
+    <string name="cc_achi"> Call for code\n
+(Call for Code, a worldwide, multi-year initiative that inspires developers to solve pressing global problems with sustainable software solutions.)\n
+All the coordinators for the club are Gcp certified\n</string>
+    <string name="web_about">Make the student as web developer by providing web environment and training</string>
 
 </resources>
