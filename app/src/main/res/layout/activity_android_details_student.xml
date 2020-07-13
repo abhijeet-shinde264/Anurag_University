@@ -8,251 +8,328 @@
     tools:context=".Android_details_student">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <LinearLayout
-                android:id="@+id/l1_new1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/t1_new1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Resource person:"
-                    android:textColor="#ffffff"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-
-                    />
-
-                <include layout="@layout/undwhite" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/as51"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/iot"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/l1_new1"
-                />
-
-            <LinearLayout
-                android:id="@+id/l2_new1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_margin="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/as51">
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Event Name:"
-                    android:layout_weight="1"
-                    android:textColor="#fff"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/as51"/>
-
-
-
-                <TextView
-                    android:id="@+id/as11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="6dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-
-                    android:textColor="#ffffff"
-                    android:textAllCaps="true"
-                    android:textSize="16sp"
-                    android:text="prabhas"
-                    />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/l3_new1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_margin="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/l2_new1">
-
-                <TextView
-                    android:id="@+id/t31"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Date Of Event:"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:layout_weight="1"
-                    android:textStyle="bold"
-                    />
-                <TextView
-                    android:id="@+id/as21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:padding="6dp"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textColor="#ffffff"
-                    android:text="22-11-2019"
-                    android:layout_marginLeft="28dp"
-                    android:layout_marginRight="8dp" />
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ei"
-                    android:id="@+id/editdate"
-                    android:visibility="invisible"
-                    android:layout_height="35dp"/>
-            </LinearLayout>
-
-
-            />
-
-            <LinearLayout
-                android:id="@+id/l4_new1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="vertical"
-                android:layout_margin="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lnew1">
-
-                <TextView
-                    android:id="@+id/t41"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Profile:"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/as41" />
-
-                <include layout="@layout/underlinewhite" />
-            </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/as31"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Resource person:"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <include layout="@layout/undwhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageret"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/iot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Event Name:"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eretriname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:text="Rohit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Date Of Event:"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/redate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="8dp"
+                android:padding="6dp"
+                android:textColor="#ffffff"
+                android:text="22-11-2019"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/editdate"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/ei"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Targeted Students:"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/retyesr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:text="3rd yr"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/ei"
+                android:id="@+id/edittarget"
+                android:visibility="invisible"
+                android:layout_height="35dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Organized by:"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/retclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Android Club"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile:"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <include layout="@layout/underlinewhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/retinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textSize="16sp"
                 android:padding="6dp"
                 android:text="Prabhas is an Indian film actor associated with Telugu Cinema. Prabhas made his film debut with the 2002 drama film Eeswar. "
-                android:textColor="#ffffff"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/l4_new1" />
-            <LinearLayout
-                android:id="@+id/lnew1"
-                android:layout_width="match_parent"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="6"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_margin="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/l3_new1">
+                android:layout_weight="4"
+                android:padding="6dp"
+                android:text="LINK 1:"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-                <TextView
+            <TextView
+                android:id="@+id/retlink1"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="www"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="visible" />
+            <Button
+                android:layout_width="40dp"
+                android:id="@+id/editlink"
+                android:visibility="invisible"
+                android:background="@drawable/ei"
+                android:layout_height="35dp"/>
+        </LinearLayout>
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Targeted Students:"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="6"
+            android:layout_margin="5dp">
 
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:layout_weight="1"
-                    android:textStyle="bold"
-                    />
-                <TextView
-                    android:id="@+id/as41"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:padding="6dp"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textColor="#ffffff"
-                    android:text="3rd yr"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginLeft="28dp"
-                    android:layout_marginRight="8dp" />
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ei"
-                    android:id="@+id/edittarget"
-                    android:visibility="invisible"
-                    android:layout_height="35dp"/>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="4"
+                android:padding="6dp"
+                android:text="LINK 2:"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-
-            </LinearLayout>
-
-
+            <TextView
+                android:id="@+id/retlink2"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="www"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="visible" />
+            <Button
+                android:layout_width="40dp"
+                android:id="@+id/editlink2"
+                android:visibility="invisible"
+                android:background="@drawable/ei"
+                android:layout_height="35dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <Button
                 android:id="@+id/edit_post"
                 android:layout_width="wrap_content"
@@ -261,9 +338,6 @@
                 android:layout_marginBottom="10dp"
                 android:text="Edit"
                 android:visibility="gone"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/report"
                 />
 
 
@@ -288,62 +362,7 @@
                 android:background="@drawable/button_bg"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:visibility="gone"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linearlayout2"/>
-
-
-
-            <LinearLayout
-                android:id="@+id/linearlayout2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_weight="6"
-                android:layout_margin="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/as31">
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="4"
-                    android:padding="6dp"
-                    android:text="LINK :"
-                    android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/as61"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:padding="6dp"
-                    android:text="www"
-                    android:textSize="16sp"
-                    android:textColor="#ffffff"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-                <Button
-                    android:layout_width="40dp"
-                    android:id="@+id/editlink"
-                    android:visibility="invisible"
-                    android:background="@drawable/ei"
-                    android:layout_height="35dp"/>
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:visibility="gone"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

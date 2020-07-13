@@ -44,7 +44,7 @@
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
             android:fontFamily="sans-serif"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:visibility="gone"/>
 
         <Button
@@ -76,7 +76,7 @@
             android:text="36hrs Hackathon on IOT in association with CSI"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -102,7 +102,7 @@
             android:textSize="30sp"
             android:fontFamily="sans-serif"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
             android:layout_marginRight="8sp"
@@ -126,7 +126,7 @@
             android:text="IOT Challenge 2019 in collaboration with IOT Club and ISTE"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -164,7 +164,7 @@
             android:text="National Industry Partnership Program(NIPP) Mobility challenge"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -202,7 +202,7 @@
             android:textSize="20sp"
             android:fontFamily="sans-serif"
             android:layout_marginBottom="5sp"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:visibility="gone"/>

@@ -16,7 +16,7 @@ WebView webView1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phar_phd);
-        webView1=findViewById(R.id.vdsweb);
+        webView1=findViewById(R.id.phphd);
         WebSettings webSettings=webView1.getSettings();
         webView1.loadUrl("https://anurag.edu.in/academics/programs/pharmacy/pharmacy-phd/");
         webSettings.setJavaScriptEnabled(true);

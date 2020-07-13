@@ -23,6 +23,8 @@
                 android:textAlignment="center"
                 android:textSize="30dp"
                 android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/imgug"

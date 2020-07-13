@@ -45,7 +45,7 @@
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
             android:fontFamily="sans-serif"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:visibility="gone"/>
 
         <Button
@@ -99,7 +99,7 @@
             android:text="Dr.A. Obulesh - Head\n\nA. Shashank Raj - President\n\nP. Rahul - Secretary\n\nArunKumar Kudarihal - Vice President Education and Training\n\nV.Anisha Raj - Vice President Membership\n\nDindima Reddy Avula - Treasurer\n\nYashashwini Potu - Vice President Public Relations\n\nAnirudh kumar - Vice President Membership\n\nN.Charan - Treasurer\n\nHruthika.T - \n\nVice President Education and Training\n\nS.Sreeja Reddy - Industry Coordinator\n\nMadhukar - Industry Coordinator\n\nHemanth Erabelli - Vice President Public Relations\n\nY K V Mohanji - Vice President Membership"
             android:textSize="20sp"
             android:layout_marginBottom="5sp"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:textAlignment="center"
             android:gravity="center_horizontal"

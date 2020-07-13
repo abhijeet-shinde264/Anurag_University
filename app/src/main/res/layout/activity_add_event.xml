@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddEvent">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -22,10 +21,7 @@
             android:textColor="#070707"
             android:textStyle="bold"
             android:textSize="25sp"
-
             />
-
-
         <EditText
             android:id="@+id/edacmeventname"
             android:layout_width="match_parent"
@@ -40,15 +36,11 @@
             android:textColor="#050505"
             android:textColorHint="#050505"
             app:layout_constraintTop_toBottomOf="@id/tvacm"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="8dp">
-
-
         </EditText>
-
         <EditText
             android:id="@+id/edacmdate"
             android:layout_width="match_parent"
@@ -56,13 +48,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-
             android:focusable="false"
             android:clickable="true"
             android:editable="false"
             android:background="@drawable/border1"
             android:hint="Date"
-
             android:padding="10dp"
             android:textColor="#050505"
             android:inputType="date"
@@ -71,7 +61,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edacmeventname" />
-
         <LinearLayout
             android:id="@+id/lacm"
             android:layout_width="match_parent"
@@ -82,7 +71,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edacmdate">
-
             <TextView
                 android:id="@+id/tacm"
                 android:layout_width="match_parent"
@@ -97,9 +85,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edacmdate"
-
                 tools:layout_editor_absoluteY="185dp" />
-
             <include layout="@layout/und" />
         </LinearLayout>
         <ImageView
@@ -148,7 +134,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bacmupload" />
-
         <EditText
             android:id="@+id/edacmtarget"
             android:layout_width="match_parent"
@@ -167,7 +152,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edacmprofile"
             app:layout_constraintVertical_bias="0.0" />
-
         <EditText
             android:id="@+id/edacmlink"
             android:layout_width="match_parent"
@@ -187,9 +171,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edacmtarget"
             app:layout_constraintVertical_bias="0.0" />
-
-
-
+        <EditText
+            android:id="@+id/edacmlink2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/border"
+            android:hint="Optional Link"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="#050505"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edacmlink"
+            app:layout_constraintVertical_bias="0.0" />
         <EditText
             android:id="@+id/edacmlink1"
             android:layout_width="match_parent"
@@ -207,9 +207,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edacmlink"
+            app:layout_constraintTop_toBottomOf="@id/edacmlink2"
             app:layout_constraintVertical_bias="0.0" />
-
         <Button
             android:id="@+id/bacminsert"
             android:layout_width="wrap_content"
@@ -229,10 +228,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edacmlink1"
             app:layout_constraintVertical_bias="1.0" />
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </ScrollView>

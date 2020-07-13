@@ -42,7 +42,7 @@
             android:layout_marginRight="8sp"
             android:layout_marginBottom="8sp"
             android:fontFamily="sans-serif"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:visibility="gone"/>
 
         <Button
@@ -73,7 +73,7 @@
             android:text="Data Storytelling Hackathon"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -98,7 +98,7 @@
             android:text="Qlik Sense training program"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -123,7 +123,7 @@
             android:text="Qlik sense Business Analyst Qualification Certification Exam"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -160,7 +160,7 @@
             android:text="Megathon at IIIT\nShashidar Reddy J\nFirst Prize Winner at Megathon 2019."
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:layout_marginBottom="8sp"
@@ -187,7 +187,7 @@
             android:textSize="20sp"
             android:fontFamily="sans-serif"
             android:layout_marginBottom="5sp"
-            android:textColor="#ffffff"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:visibility="gone"/>

@@ -42,7 +42,7 @@ public class PostGrad extends AppCompatActivity implements ClickListener{
     private ArrayList<RecycleModel> getPlayers() {
         ArrayList<RecycleModel> models = new ArrayList<>();
         RecycleModel p = new RecycleModel();
-        p.setText("VILS System Design");
+        p.setText("VLSI System Design");
         p.setImg(R.drawable.vlsisdpg);
         models.add(p);
         p = new RecycleModel();

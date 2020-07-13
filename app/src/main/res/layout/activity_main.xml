@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/drawerlayout"
-    android:background="@drawable/bg_grident">
+    android:background="#A823A7D8">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,10 +26,11 @@
                 android:id="@+id/textView18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anurag University at a Glance"
-                android:textColor="#FDFDFD"
+                android:textAllCaps="true"
+                android:text="Anurag University at a Glance:"
+                android:textColor="#F50A28DC"
                 android:textStyle="bold"
-                android:textSize="30dp"
+                android:textSize="22dp"
                 android:fontFamily="sans-serif"/>
             </LinearLayout>
 
@@ -60,10 +61,10 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ESTABLISHED"
-                    android:textSize="30dp"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     android:textAllCaps="true"
-                    android:textColor="#FDFDFD"
+                    android:textColor="#F50A28DC"
                     android:fontFamily="sans-serif"/>
             </LinearLayout>
 
@@ -93,10 +94,10 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ENROLLMENT"
-                    android:textSize="30dp"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     android:textAllCaps="true"
-                    android:textColor="#FDFDFD"
+                    android:textColor="#F50A28DC"
                     android:fontFamily="sans-serif"/>
             </LinearLayout>
             <LinearLayout
@@ -114,14 +115,13 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:text="UNDERGRADUATE INTAKE:"
                     android:textColor="#FDFDFD"
                     android:textSize="25dp" />
-
                 <TextView
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
-                    android:text="1240"
+                    android:text="  1240"
                     android:textColor="#FDFDFD"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -130,7 +130,6 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp">
-
                 <TextView
                     android:id="@+id/textView24"
                     android:layout_width="187dp"
@@ -140,13 +139,12 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:text="GRADUATE INTAKE:"
                     android:textColor="#FDFDFD"
                     android:textSize="25dp" />
-
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="240"
+                    android:text="  240"
                     android:textColor="#FDFDFD"
                     android:textSize="20dp"
                     android:fontFamily="sans-serif"/>
@@ -156,17 +154,15 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp">
-
                 <TextView
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TOTAL STUDENTS"
+                    android:text="TOTAL STUDENTS:"
                     android:fontFamily="sans-serif"
                     android:textColor="#FDFDFD"
                     android:textSize="25dp"  />
-
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
@@ -182,25 +178,22 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp">
-
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="STUDENT DEMOGRAPHICS"
-                    android:textSize="30dp"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     android:textAllCaps="true"
-                    android:textColor="#FDFDFD"
+                    android:textColor="#F50A28DC"
                     android:fontFamily="sans-serif"/>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp">
-
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
@@ -210,7 +203,6 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:textSize="25dp"
                     android:textColor="#FDFDFD"
                     android:fontFamily="sans-serif"/>
-
                 <TextView
                     android:id="@+id/textView32"
                     android:layout_width="wrap_content"
@@ -218,16 +210,14 @@ Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs." />
                     android:layout_weight="1"
                     android:text="48%"
                     android:textColor="#FDFDFD"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:fontFamily="sans-serif" />
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp">
-
                 <TextView
                     android:id="@+id/textView33"
                     android:layout_width="132dp"

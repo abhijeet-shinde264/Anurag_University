@@ -1,16 +1,19 @@
 package com.auapp.anuraguniversity;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -18,12 +21,16 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
@@ -41,49 +48,40 @@ import java.util.Locale;
 import id.zelory.compressor.Compressor;
 
 public class AddEvent extends AppCompatActivity {
-    private ImageView profile;
-    private EditText eventname,dateed,targeted,info,link,optionallink;
-    private Button uploadBtn1,save;
-    ProgressDialog progressDialog;
-    // private Calendar mcalendar;
-    // private int day,month,year;
-    private Uri postImageUri = null;
-    String postdate,posttime,postrandomname,downloadurl;
-    DatabaseReference useref,postref;
-    String event,target,info1,uid,link1,date1,link2;
-    private StorageReference storageReference;
-    private FirebaseAuth firebaseAuth;
-    String thumb_downloadurl;
+    EditText e1,e2,e3,e4,e5,e6,e7;
+    String s1,s2,s3,s4,s5,s6,s7;
+    ImageView i1;
+    Button b1,b2;
+    FirebaseAuth auth;
+    Events events;
+    String postdate,posttime,postrandomname;
     private Bitmap compressedImageFile=null;
+    private Uri imgUrl = null;
+    private StorageReference mStorageRef;
+    private DatabaseReference mDatabaseRef;
+    int minteger = 0;
+    private StorageTask mUploadTask;
+    private static final int PICK_IMAGE_REQUEST = 1;
 
+    private static final int CHOOSE_IMAGE = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
-        storageReference = FirebaseStorage.getInstance().getReference();
-        postref= FirebaseDatabase.getInstance().getReference().child("Events");
-        eventname=(EditText)findViewById(R.id.edacmeventname) ;
-        dateed=(EditText)findViewById(R.id.edacmdate) ;
+        auth = FirebaseAuth.getInstance();
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("Events");
+        mStorageRef = FirebaseStorage.getInstance().getReference();
+        e1 = findViewById(R.id.edacmeventname);
+        e2 = findViewById(R.id.edacmdate);
+        e3 = findViewById(R.id.edacmprofile);
+        e4 = findViewById(R.id.edacmtarget);
+        e5 = findViewById(R.id.edacmlink);
+        e6 = findViewById(R.id.edacmlink1);
+        e7 = findViewById(R.id.edacmlink2);
+        b1 = findViewById(R.id.bacmupload);
+        b2 = findViewById(R.id.bacminsert);
+        i1 = findViewById(R.id.imgacm);
         final Calendar myCalendar = Calendar.getInstance();
-        targeted=(EditText)findViewById(R.id.edacmtarget) ;
-        uploadBtn1=(Button)findViewById(R.id.bacmupload);
-        info=(EditText)findViewById(R.id.edacmprofile);
-        link=(EditText)findViewById(R.id.edacmlink);
-        optionallink = findViewById(R.id.edacmlink1);
-        save=(Button)findViewById(R.id.bacminsert);
-        profile=(ImageView)findViewById(R.id.imgacm) ;
-        progressDialog=new ProgressDialog(this);
-        uploadBtn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CropImage.activity()
-                        .setGuidelines(CropImageView.Guidelines.ON)
-                        .setMinCropResultSize(512, 512)
-                        .setAspectRatio(1, 1)
-                        .start(AddEvent.this);
-
-            }
-        });
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -97,13 +95,10 @@ public class AddEvent extends AppCompatActivity {
             private void updateLabel() {
                 String myFormat = "MM/dd/yy"; //In which you need put here
                 SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-
-                dateed.setText(sdf.format(myCalendar.getTime()));
+                e2.setText(sdf.format(myCalendar.getTime()));
             }
-
         };
-        dateed.setOnClickListener(new View.OnClickListener() {
-
+        e2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -112,140 +107,102 @@ public class AddEvent extends AppCompatActivity {
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
-        save.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                event=eventname.getText().toString();
-                date1=dateed.getText().toString();
-                info1=info.getText().toString();
-                target=targeted.getText().toString();
-                link1=link.getText().toString();
-                link2=optionallink.getText().toString();
-                if(TextUtils.isEmpty(event))
-                {
-                    Toast.makeText(AddEvent.this,"Please enter the Event Name",Toast.LENGTH_LONG).show();
-                }
-                else if(TextUtils.isEmpty(date1))
-                {
-                    Toast.makeText(AddEvent.this,"Please fill the date",Toast.LENGTH_LONG).show();
-                }
-                else if(TextUtils.isEmpty(info1))
-                {
-                    Toast.makeText(AddEvent.this,"Please fill the profile",Toast.LENGTH_LONG).show();
-                }
-                else if(TextUtils.isEmpty(target))
-                {
-                    Toast.makeText(AddEvent.this,"Please fill the targeted students",Toast.LENGTH_LONG).show();
-                }
-                else if(TextUtils.isEmpty(link1))
-                {
-                    Toast.makeText(AddEvent.this,"Please fill the link",Toast.LENGTH_LONG).show();
-                }
-                else if(postImageUri==null)
-                {
-                    Toast.makeText(AddEvent.this,"Please Select the Image to Post",Toast.LENGTH_LONG).show();
-                }
-                else {
+                CropImage.activity()
+                        .setGuidelines(CropImageView.Guidelines.ON)
+                        .setMinCropResultSize(512, 512)
+                        .setAspectRatio(1, 1)
+                        .start(AddEvent.this);
 
-                    progressDialog.setMessage("Please Wait...");
-                    progressDialog.setTitle("Uploading");
-                    progressDialog.show();
-                    progressDialog.setCancelable(false);
-
-
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                s1 = e1.getText().toString();
+                s2 = e3.getText().toString();
+                s3 = e4.getText().toString();
+                s4 = e5.getText().toString();
+                s5 = e6.getText().toString();
+                //s6 = e7.getText().toString();
+                if (TextUtils.isEmpty(s1)) {
+                    e1.setError("Required");
+                } else if (TextUtils.isEmpty(s2)) {
+                    e3.setError("Required");
+                } else if (TextUtils.isEmpty(s3)) {
+                    e4.setError("Required");
+                } else if (TextUtils.isEmpty(s4)) {
+                    e5.setError("Required");
+                } else if (TextUtils.isEmpty(s5)) {
+                    e6.setError("Required");
+                } else if (imgUrl == null) {
+                    Toast.makeText(AddEvent.this, "Image is missing....", Toast.LENGTH_SHORT).show();
+                } else {
                     Calendar calendardate=Calendar.getInstance();
                     SimpleDateFormat currentdate=new SimpleDateFormat("dd-MMMM-yyyy");
                     postdate=currentdate.format(calendardate.getTime());
-
                     Calendar calendartime=Calendar.getInstance();
                     SimpleDateFormat currenttime=new SimpleDateFormat("hh:mm a");
                     posttime=currenttime.format(calendartime.getTime());
-
                     postrandomname=postdate+posttime;
+                    if (imgUrl != null) {
+                        final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis() + "." + getFileExtension(imgUrl));
 
-
-                    ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
-                    compressedImageFile.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
-
-                    final byte[] cropbyte=byteArrayOutputStream.toByteArray();
-
-                    StorageReference filepath=storageReference.child("Events").child(postdate+posttime+".jpg");
-
-                    final StorageReference thumb_filepath=storageReference.child("Events").child(postdate+posttime+".jpg");
-
-                    filepath.putFile(postImageUri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                            if(task.isSuccessful())
-                            {
-                                UploadTask uploadTask=thumb_filepath.putBytes(cropbyte);
-
-                                uploadTask.addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                        mUploadTask = fileReference.putFile(imgUrl)
+                                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                     @Override
-                                    public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task_thump) {
-
-                                        thumb_downloadurl=task_thump.getResult().getStorage().getDownloadUrl().toString();
-
-                                        if(task_thump.isSuccessful())
-                                        {
-                                            savingpostinfo();
-                                        }
+                                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                        fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                            @Override
+                                            public void onSuccess(Uri uri) {
+                                                Events upload = new Events(e1.getText().toString().trim(),e2.getText().toString().trim(),uri.toString(),e3.getText().toString().trim(),
+                                                        e4.getText().toString().trim(),e5.getText().toString().trim(),e6.getText().toString().trim(),e7.getText().toString().trim());
+                                                String uploadID = mDatabaseRef.push().getKey();
+                                                mDatabaseRef.child(uploadID).setValue(upload);
+                                                Toast.makeText(AddEvent.this, "Upload successfully", Toast.LENGTH_LONG).show();
+                                                i1.setImageResource(R.drawable.imagepreview);
+                                                startActivity(new Intent(AddEvent.this,EventRetrival.class));
+                                            }
+                                        });
+                                    }
+                                })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Toast.makeText(AddEvent.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                                    }
+                                })
+                                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                                    @Override
+                                    public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+//                                       double progress = (100.0 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
+//                                       uploadProgress.setProgress((int) progress);
                                     }
                                 });
-                            }
-                        }
-                    });
+                    } else {
+                        Toast.makeText(AddEvent.this, "No file selected", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
     }
-    private void savingpostinfo() {
-        firebaseAuth=FirebaseAuth.getInstance();
-        uid=firebaseAuth.getCurrentUser().getUid();
-        link1=link.getText().toString();
-        link2=optionallink.getText().toString();
-        HashMap postmap=new HashMap();
-        postmap.put("eventname",event);
-        postmap.put("date",date1);
-        postmap.put("info",info1);
-        postmap.put("students",target);
-        postmap.put("image",thumb_downloadurl);
-        postmap.put("uid",uid);
-        postmap.put("link",link1);
-        postmap.put("name",link2);
-//        postmap.put("club","ACM");
-        postref.child(uid).updateChildren(postmap).addOnCompleteListener(new OnCompleteListener() {
-            @Override
-            public void onComplete(@NonNull Task task) {
-                if(task.isSuccessful())
-                {
-                    progressDialog.dismiss();
-                    Intent intent=new Intent(AddEvent.this,EventRetrival.class);
-                    intent.putExtra("event",postrandomname);
-                    startActivity(intent);
-                    finish();
-                }
-                else
-                {
-                    progressDialog.dismiss();
-                    String msg=task.getException().toString();
-                    Toast.makeText(AddEvent.this,"Error Occured :"+msg,Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
+    private String getFileExtension(Uri uri) {
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
-                postImageUri = result.getUri();
-                Picasso.get().load(postImageUri).networkPolicy(NetworkPolicy.OFFLINE).into(profile);
-                File crop_path=new File(postImageUri.getPath());
+                imgUrl = result.getUri();
+                Picasso.get().load(imgUrl).networkPolicy(NetworkPolicy.OFFLINE).into(i1);
+                File crop_path=new File(imgUrl.getPath());
                 try {
                     compressedImageFile=new Compressor(this)
                             .setMaxHeight(300)
@@ -257,7 +214,6 @@ public class AddEvent extends AppCompatActivity {
                 }
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
-                Toast.makeText(this, "Error is:"+error, Toast.LENGTH_SHORT).show();
             }
         }
     }

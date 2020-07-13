@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 public class CsseUg extends AppCompatActivity {
     WebView webView1;
     @Override
@@ -49,7 +48,6 @@ public class CsseUg extends AppCompatActivity {
             return true;
         }
     }
-
     @Override
     public void onBackPressed() {
         if(webView1.canGoBack())

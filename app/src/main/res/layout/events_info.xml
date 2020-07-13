@@ -7,20 +7,17 @@
     android:background="#107abc"
     app:cardUseCompatPadding="true"
     android:layout_height="wrap_content">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/cardbg"
         android:layout_margin="10dp"
         android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +30,6 @@
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:id="@+id/retrivalevent"/>
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
@@ -42,11 +38,6 @@
                 android:transitionName="trans"
                 android:scaleType="centerCrop"
                 />
-
-
-
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +50,6 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:id="@+id/retrivalbranch"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +62,6 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:id="@+id/retrivalt1"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,7 +74,6 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:id="@+id/retrivalt2"/>
-
             <TextView
                 android:visibility="gone"
                 android:layout_width="match_parent"
@@ -93,29 +81,35 @@
                 android:textSize="0dp"
                 android:layout_weight="1"
                 android:text="link"
-
                 android:gravity="center"
                 android:textColor="#020202"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:id="@+id/retrivallink"/>
-
-
-
+            <TextView
+                android:id="@+id/oplink"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="0dp"
+                android:layout_weight="1"
+                android:text="optional link"
+                android:gravity="center"
+                android:textColor="#020202"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="0dp"
+                android:layout_weight="1"
+                android:text="chapter or club"
+                android:gravity="center"
+                android:textColor="#020202"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/chorcl"/>
         </LinearLayout>
-
-
-
-
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>

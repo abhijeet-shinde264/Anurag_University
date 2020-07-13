@@ -29,76 +29,71 @@ public class EventRetrival extends AppCompatActivity {
         linearLayoutManager.setReverseLayout(true);
         linearLayoutManager.setStackFromEnd(true);
         eventslist.setLayoutManager(linearLayoutManager);
-
-
         validateeventslist();
     }
+
     private void validateeventslist() {
-
         reference = FirebaseDatabase.getInstance().getReference().child("Events");
-
-        FirebaseRecyclerAdapter<Events, eventslistviewholder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<Events, EventRetrival.eventslistviewholder>
-                        (
-                                Events.class, R.layout.events_info, EventRetrival.eventslistviewholder.class, reference
-                        ) {
+        FirebaseRecyclerAdapter<Events, EventRetrival.ViewHolder123> firebaseRecyclerAdapter =
+                new FirebaseRecyclerAdapter<Events, ViewHolder123>(
+                        Events.class, R.layout.events_info, ViewHolder123.class, reference
+                ) {
                     @Override
-                    protected void populateViewHolder(EventRetrival.eventslistviewholder viewHolder, Events model, int position) {
+                    protected void populateViewHolder(ViewHolder123 viewHolder123, Events events, int i) {
+                        final String key = getRef(i).getKey();
+                        viewHolder123.setEname(events.getEventname());
+                        viewHolder123.setDate(events.getData());
+                        viewHolder123.setImage(events.getImg());
+                        viewHolder123.setInfo(events.getProfil());
+                        viewHolder123.setStudents(events.getTstudent());
+                        viewHolder123.setClub(events.getName());
+                        viewHolder123.setLink(events.getLink());
+                        viewHolder123.setOlink(events.getOlink());
+//                        final String s1 = events.getEventname();
+//                        final String s2 = events.getData();
+//                        final String s3 = events.getImg();
+//                        final String s4 = events.getProfil();
+//                        final String s5 = events.getTstudent();
+//                        final String s6 = events.getName();
+//                        final String s7 = events.getLink();
 
-                        viewHolder.setEventname(model.getEventname());
-                        viewHolder.setInfo(model.getInfo());
-                        viewHolder.setImage(model.getImage());
-                        viewHolder.setStudents(model.getStudents());
-                        viewHolder.setDate(model.getDate());
-                        viewHolder.setLink(model.getLink());
-                        final String s1 = model.getEventname();
-                        final String s3 = model.getInfo();
-                        final String s5 = model.getImage();
-                        final String s4 = model.getStudents();
-                        final String s2 = model.getDate();
-                        final String s6=model.getLink();
-                        final String s7=model.getUid();
-//                        final String s8=model.getClub();
-                        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                        viewHolder123.mview.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Intent intent = new Intent(EventRetrival.this, Android_details_student.class);
-                                intent.putExtra("a1", s1);
-                                intent.putExtra("a2", s2);
-                                intent.putExtra("a3", s3);
-                                intent.putExtra("a4", s4);
-                                intent.putExtra("a5", s5);
-                                intent.putExtra("a6",s6);
-                                intent.putExtra("a7",s7);
-//                                intent.putExtra("a8",s8);
+                                Intent intent = new Intent(EventRetrival.this,Android_details_student.class);
+                                intent.putExtra("key",key);
+//                                intent.putExtra("a1",s1);
+//                                intent.putExtra("a2",s2);
+//                                intent.putExtra("a3",s3);
+//                                intent.putExtra("a4",s4);
+//                                intent.putExtra("a5",s5);
+//                                intent.putExtra("a6",s6);
+//                                intent.putExtra("a7",s7);
                                 startActivity(intent);
                             }
                         });
                     }
                 };
         eventslist.setAdapter(firebaseRecyclerAdapter);
-
-
     }
 
-    public static class eventslistviewholder extends RecyclerView.ViewHolder {
+    public static class ViewHolder123 extends RecyclerView.ViewHolder {
         View mview;
 
-        public eventslistviewholder(@NonNull View itemView) {
+        public ViewHolder123(@NonNull View itemView) {
             super(itemView);
             mview = itemView;
+        }
+
+        public void setEname(String ename) {
+            TextView t1 = mview.findViewById(R.id.retrivalevent);
+            t1.setText(ename);
         }
 
         public void setDate(String date) {
             TextView t1 = mview.findViewById(R.id.retrivalbranch);
             t1.setText(date);
         }
-
-        public void setEventname(String eventname) {
-            TextView t2 = mview.findViewById(R.id.retrivalevent);
-            t2.setText(eventname);
-        }
-
 
         public void setImage(String image) {
             {
@@ -120,13 +115,18 @@ public class EventRetrival extends AppCompatActivity {
 
         public void setLink(String link) {
             TextView t4 = mview.findViewById(R.id.retrivallink);
-            if(!TextUtils.isEmpty(link))
-            {
+            if (!TextUtils.isEmpty(link)) {
                 t4.setVisibility(View.VISIBLE);
                 t4.setText(link);
             }
-
         }
-//        public void get
+        public void setClub(String clch){
+            TextView t5 = mview.findViewById(R.id.chorcl);
+            t5.setText(clch);
+        }
+        public void setOlink(String olink){
+            TextView t6 = mview.findViewById(R.id.oplink);
+            t6.setText(olink);
+        }
     }
 }

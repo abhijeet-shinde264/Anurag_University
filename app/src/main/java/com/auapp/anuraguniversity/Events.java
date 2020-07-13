@@ -1,47 +1,40 @@
 package com.auapp.anuraguniversity;
 
 public class Events {
+    String eventname,data,img,profil,tstudent,link,name,uid,olink;
 
-    String date,eventname,image,info,students,uid,link,club;
 
-    public Events()
-    {
 
-    }
 
-    public Events(String date, String eventname, String image, String info, String students, String link, String uid, String club) {
-        this.date = date;
+    public Events(String eventname, String data, String img, String profil, String tstudent, String link, String name,  String olink) {
         this.eventname = eventname;
-        this.image = image;
-        this.info = info;
-        this.students = students;
-       this.uid=uid;
-        this.link=link;
-        this.club=club;
-    }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
+        this.data = data;
+        this.img = img;
+        this.profil = profil;
+        this.tstudent = tstudent;
         this.link = link;
+        this.name = name;
+        //this.uid = uid;
+        this.olink = olink;
     }
 
     public String getUid() {
         return uid;
     }
 
+    public String getOlink() {
+        return olink;
+    }
+
+    public void setOlink(String olink) {
+        this.olink = olink;
+    }
+
     public void setUid(String uid) {
         this.uid = uid;
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
+    public Events() {
     }
 
     public String getEventname() {
@@ -52,35 +45,51 @@ public class Events {
         this.eventname = eventname;
     }
 
-    public String getImage() {
-        return image;
+    public String getData() {
+        return data;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setData(String data) {
+        this.data = data;
     }
 
-    public String getInfo() {
-        return info;
+    public String getImg() {
+        return img;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setImg(String img) {
+        this.img = img;
     }
 
-    public String getStudents() {
-        return students;
+    public String getProfil() {
+        return profil;
     }
 
-    public void setStudents(String students) {
-        this.students = students;
+    public void setProfil(String profil) {
+        this.profil = profil;
     }
 
-    public String getClub() {
-        return club;
+    public String getTstudent() {
+        return tstudent;
     }
 
-    public void setClub(String club) {
-        this.club = club;
+    public void setTstudent(String tstudent) {
+        this.tstudent = tstudent;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

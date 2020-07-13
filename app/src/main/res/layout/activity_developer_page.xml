@@ -29,7 +29,7 @@
                 android:gravity="center"
                 android:text="@string/karna"
                 android:textSize="40dp"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true" />
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textIsSelectable="true"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:text="@string/abhijeeth"
                 android:gravity="center"
                 android:textSize="25dp"
@@ -61,7 +61,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/t1"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textIsSelectable="true"
                 android:textSize="20dp"
                 android:textStyle="normal" />
@@ -80,7 +80,7 @@
                 android:text="@string/nagesh"
                 android:textStyle="bold"
                 android:textIsSelectable="true"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="25dp"/>
@@ -91,7 +91,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/t2"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textIsSelectable="true"
                 android:textSize="20dp"
                 android:textStyle="normal" />
@@ -108,7 +108,7 @@
                 android:textIsSelectable="true"
                 android:layout_height="wrap_content"
                 android:text="@string/ravi"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textStyle="bold"
@@ -121,7 +121,7 @@
                 android:gravity="center"
                 android:textIsSelectable="true"
                 android:textStyle="normal"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="20dp"/>
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="200dp"
@@ -137,7 +137,7 @@
                 android:text="@string/neha"
                 android:textIsSelectable="true"
                 android:layout_gravity="center"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="25dp"/>
@@ -149,7 +149,7 @@
                 android:textIsSelectable="true"
                 android:gravity="center"
                 android:textStyle="normal"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="20dp"/>
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="200dp"
@@ -169,7 +169,7 @@
                 android:gravity="center"
                 android:textStyle="bold"
 
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="25dp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -179,7 +179,7 @@
                 android:text="@string/t5"
                 android:textIsSelectable="true"
                 android:textStyle="normal"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:textSize="20dp"/>
 
 
